@@ -148,6 +148,7 @@ button {
   margin: 10px;
 }
 
+/* Nav bar */
 nav {
   position: fixed;
   top: 0;
@@ -157,13 +158,11 @@ nav {
   justify-content: end;
   padding: 16px;
 }
-
 .nav-link, .nav-login {
   margin: 8px;
 }
-
 .nav-icon a {
-  margin: -7px 28px 0px 10px;
+  margin: -7px 7px 0px 10px;
   color: #5f6368;
   padding: 8px;
   display: flex;
@@ -171,13 +170,29 @@ nav {
   justify-content: center;
   align-content: center;
 }
-
 .nav-icon a:hover {
   background-color: #f0f0f0;
   border-width: 0;
   border-radius: 50%;
 }
+.nav-user a img {
+  border-radius: 50%;
+}
+.nav-user a{
+  margin: -7px 0px 0px 0px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.nav-user a:hover {
+  background-color: #f0f0f0;
+  border-width: 0;
+  border-radius: 50%;
+}
 
+/* Footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -187,7 +202,6 @@ footer {
   border-top: 0.1px solid var(--footer-border-color);
   color: var(--footer-font-color);
 }
-
 footer .left-footer {
   float: left;
   padding-left: 24px;
