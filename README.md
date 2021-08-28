@@ -8,6 +8,6 @@
 
 ## TODO
 
-* [ ] Adaptive width
 * [ ] Float hint
+* [x] Adaptive width
 * [x] Layout
