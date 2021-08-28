@@ -21,22 +21,15 @@
 body {
   /* Make the body take up the whole window*/
   height: 100vh;
-  margin: auto;
-
-  /* Flex */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* Show the body */
-  /* border: 3px solid red; */
 }
 
 #main {
   height: 250px;
   width: 600px;
   padding: 10px;
-
+  position: relative;
+  top: 30%;
+  margin: auto;
   /* Flex */
   display: flex;
   flex-direction: column;
@@ -174,7 +167,7 @@ button:hover {
 
 /* Nav bar */
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   display: flex;
@@ -221,9 +214,6 @@ nav {
 html {
   position: relative;
   min-height: 100%;
-}
-body {
-  /* margin-bottom: 100px; */
 }
 
 footer {
@@ -273,4 +263,10 @@ a:hover {
   /* .right-section {
     margin-right: 0;
   } */
+}
+
+@media (max-height: 500px) {
+  html {
+    height: 500px;
+  }
 }
