@@ -1,6 +1,6 @@
 :root {
-  --search-bar-color: gray;
-  --icon-color: gray;
+  --search-bar-color: #dfe1e5;
+  --icon-color: #9aa0a6;
 }
 
 body {
@@ -42,6 +42,24 @@ body {
   /* border: 3px solid red; */
 }
 
+.search-bar {
+  position: relative;
+  width: 60%;
+  height: 40px;
+  border: 0.5px solid var(--search-bar-color);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between; /* Important! To push pseudo-elements to the end */
+}
+
+.search-bar:hover {
+  border: none;
+  padding: 0.5px;
+  box-shadow: 0 1px 6px rgb(194, 194, 194);
+}
+
 #search-bar {
   width: 90%;
   /* height: 95%; */
@@ -53,29 +71,18 @@ body {
   outline: none;
 }
 
-.search-bar {
-  position: relative;
-  width: 60%;
-  height: 40px;
-  border: 2px solid var(--search-bar-color);
-  border-radius: 24px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between; /* Important! To push pseudo-elements to the end */
-}
-
 .icon-mic, .icon-search {
   margin: auto;
   display: flex;
   flex-direction: row;
   align-content: center;
 }
-.icon-mic { height: 20px; width: 30px; }
+.icon-mic { height: 25px; width: 50px; }
 .icon-search {
-  transform: scale(0.75);
+  transform: scale(0.8);
   position: relative;
   left: 10px;
+  color: var(--icon-color);
 }
 
 /* Don't need pseudoelements */
