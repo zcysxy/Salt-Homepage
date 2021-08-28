@@ -1,0 +1,128 @@
+body {
+  /* Make the body take up the whole window*/
+  width: 98vw;
+  height: 98vh;
+  margin: auto;
+
+  /* Flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* Show the body */
+  /* border: 3px solid red; */
+}
+
+#main {
+  height: 38%;
+  width: 70%;
+
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  
+  /* Show the main div */
+  border: 3px solid white;
+}
+
+#search {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 3px solid red; */
+}
+
+#search-bar {
+  width: 100%;
+  /* height: 100%; */
+  border: unset;
+}
+
+#search-bar:focus {
+  outline: none;
+}
+
+.search-bar {
+  width: 60%;
+  height: 40px;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.search-bar::before {
+  font-family: "Material Icons Round";
+  content: "\e8b6";
+  
+
+  /* Semi-circle */
+  position: relative;
+  right: 30px;
+  bottom: 1.5px;
+  height: 40px;
+  width: 40px;
+  border-width: 2px 0 2px 2px;
+  border-style: solid;
+  border-color: gray;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.search-bar::after {
+  float: right;
+  font-family: "Material Icons Round";
+  content: "\e029";
+  position: relative;
+  left: 40px;
+  margin: auto;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: gray;
+}
+
+footer .left-footer {
+  float: left;
+  padding-left: 10px;
+}
+
+footer .right-footer {
+  float: right;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+a:hover {
+  text-decoration: underline;
+}
