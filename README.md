@@ -5,3 +5,9 @@
 ```shell
 > start SALT
 ```
+
+## TODO
+
+* [ ] Adaptive width
+* [ ] Float hint
+* [ ] Layout
