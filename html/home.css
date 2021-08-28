@@ -22,10 +22,6 @@
 /* Make the body take up the whole window*/
 body {
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Link base style */
@@ -39,16 +35,17 @@ a {
   height: 285px;
   width: 600px;
   padding: 10px;
-  /* position: relative;
+  /* Position the main div */
+  position: relative;
   top: 20%;
-  margin: auto; */
+  margin: auto;
   /* Flex */
   display: flex;
   flex-direction: column; /* Vertically align logo, search-bar, and buttons */
   justify-content:space-between;
   align-items: center;
   /* Show the main div */
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 /* Search form */
@@ -59,7 +56,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .search-bar {
