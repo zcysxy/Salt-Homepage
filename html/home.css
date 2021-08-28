@@ -1,3 +1,8 @@
+:root {
+  --search-bar-color: gray;
+  --icon-color: gray;
+}
+
 body {
   /* Make the body take up the whole window*/
   width: 98vw;
@@ -50,27 +55,31 @@ body {
 .search-bar {
   width: 60%;
   height: 40px;
-  border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
+  border-top: 2px solid var(--search-bar-color);
+  border-bottom: 2px solid var(--search-bar-color);
   display: flex;
   flex-direction: row;
   align-content: center;
 }
 
 .search-bar::before {
+  /* Center the magnifier */
   font-family: "Material Icons Round";
   content: "\e8b6";
-  
-
+  color: var(--icon-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   /* Semi-circle */
   position: relative;
   right: 30px;
   bottom: 1.5px;
   height: 40px;
-  width: 40px;
+  width: 45px; /* Adjust width > length to make the circle more smooth */
   border-width: 2px 0 2px 2px;
   border-style: solid;
-  border-color: gray;
+  border-color: var(--search-bar-color);
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
