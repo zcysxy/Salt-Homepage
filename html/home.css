@@ -63,6 +63,7 @@ body {
   display: flex;
   flex-direction: row;
   align-content: center;
+  justify-content: space-between; /* Important! To push pseudo-elements to the end */
 }
 
 .search-bar::before {
@@ -88,7 +89,6 @@ body {
 }
 
 .search-bar::after {
-  float: right;
   font-family: "Material Icons Round";
   content: "\e029";
   display: flex;
