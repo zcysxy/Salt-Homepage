@@ -10,4 +10,4 @@
 
 * [ ] Adaptive width
 * [ ] Float hint
-* [ ] Layout
+* [x] Layout
