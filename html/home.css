@@ -2,7 +2,7 @@
   --search-bar-color: #dfe1e5;
   --icon-color: #9aa0a6;
   --footer-color: #f2f2f2;
-  --footer-border-color: #dadce0;
+  --border-color: #dadce0;
   --footer-font-color: #70757a;
   font-family: arial,sans-serif;
   font-size: 10pt;
@@ -145,7 +145,16 @@ body {
 }
 
 button {
-  margin: 10px;
+  margin: 10px 5px 0 5px;
+  padding: 10px 20px 10px 20px;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: #f8f9fa;
+}
+button:hover {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 0.5px rgb(230, 229, 229);
+  border-radius: 4px;
 }
 
 /* Nav bar */
@@ -199,7 +208,7 @@ footer {
   width: 100%;
   padding: 15px;
   background-color: var(--footer-color);
-  border-top: 0.1px solid var(--footer-border-color);
+  border-top: 0.1px solid var(--border-color);
   color: var(--footer-font-color);
 }
 footer .left-footer {
